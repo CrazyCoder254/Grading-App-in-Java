@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="SUBJECT" android:textStyle="bold"/>
+            <TextView android:layout_weight="1" android:text="SCORE" android:textStyle="bold"/>
+            <TextView android:layout_weight="1" android:text="GRADE" android:textStyle="bold"/>
+        </TableRow>
+
+        <!-- BBIT 2310 Row -->
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="BBIT 2310"/>
+            <EditText android:id="@+id/score1" android:layout_weight="1" android:inputType="number"/>
+            <TextView android:id="@+id/grade1" android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- BISF 1100 Row -->
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="BISF 1100"/>
+            <EditText android:id="@+id/score2" android:layout_weight="1" android:inputType="number"/>
+            <TextView android:id="@+id/grade2" android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- BSD 2300 Row -->
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="BSD 2300"/>
+            <EditText android:id="@+id/score3" android:layout_weight="1" android:inputType="number"/>
+            <TextView android:id="@+id/grade3" android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- BBIT 1204 Row -->
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="BBIT 1204"/>
+            <EditText android:id="@+id/score4" android:layout_weight="1" android:inputType="number"/>
+            <TextView android:id="@+id/grade4" android:layout_weight="1"/>
+        </TableRow>
+
+        <!-- BIT 1102 Row -->
+        <TableRow>
+            <TextView android:layout_weight="1" android:text="BIT 1102"/>
+            <EditText android:id="@+id/score5" android:layout_weight="1" android:inputType="number"/>
+            <TextView android:id="@+id/grade5" android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Generate Grades Button -->
+    <Button
+        android:id="@+id/generateGradesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Grades"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
